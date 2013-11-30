@@ -1,0 +1,17 @@
+<%= labelled_form_for @project,
+                   :as => :project,
+                   :url => { :controller => 'project_email', :action => 'edit' },
+                   :remote => true, :method => 'post' do |f| %>
+
+<%= error_messages_for 'project' %>
+
+<div class="box tabular">
+<p><%= f.text_field :email, :size => 60, :required => false %>
+
+<em class="info"><%= l(:text_email_format) %></em></p>
+
+</div>
+
+<%= submit_tag(l(:button_save)) %>
+
+<% end %>

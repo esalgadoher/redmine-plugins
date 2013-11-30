@@ -1,0 +1,11 @@
+# English strings go here for Rails i18n
+en:
+  my_label: "My label"
+  project_email: "Email"
+  field_email: "From email for notifications"
+  text_email_format: "Email address format : someone@anydomain.com"
+  
+es:
+  project_email: "Email"
+  field_email: "Email origen para las notificaciones"
+  text_email_format: "Formato del email: alguien@midominio.com"

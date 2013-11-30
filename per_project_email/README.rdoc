@@ -1,0 +1,15 @@
+= per_project_email
+
+Installation Procedure:
+
+1. Unpack the contents of the plugin package into de Redmine plugin directory, typically $REDMINE_HOME/plugins.
+
+2. Run database rake migration issuing the following command from your Redmine plugin directory:
+
+	$> rake redmine:plugins:migrate RAILS_ENV=production
+	
+3. Restart Redmine (the server/container which runs it).
+
+4. Now you should be able to configure emission email address from Redmine web interface on the settings tab for each project (a new sub-section called Email should appear).
+
+5. Enjoy!
